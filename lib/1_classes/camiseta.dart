@@ -12,7 +12,7 @@ class Camiseta{
   String? get cor => _cor;
 
   set cor(String? cor){
-    if(cor == 'Verde'){
+    if(cor == 'Verdee'){
       throw Exception('Não pode ser Verde');
     }
   }

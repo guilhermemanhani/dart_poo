@@ -24,7 +24,7 @@ void main(){
 '''
   );
 
-  var camisetaAdidas = new Camiseta();
+  var camisetaAdidas = Camiseta();
   camisetaAdidas.tamanho = 'P';
   camisetaAdidas.cor = 'Verde';
   camisetaAdidas.marca = 'Nike'; 
