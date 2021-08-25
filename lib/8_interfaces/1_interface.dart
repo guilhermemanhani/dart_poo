@@ -8,6 +8,8 @@ void main() {
 
   // print(uno.velocidadeMaxima());
   // print(gol.velocidadeMaxima());
+  print(gol.tipoDeRodas());
+
   printarDadosDoCarro(uno);
   printarDadosDoCarro(gol);
 }

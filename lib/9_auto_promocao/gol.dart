@@ -1,4 +1,5 @@
-import 'package:dart_poo/8_interfaces/carro.dart';
+
+import 'package:dart_poo/9_auto_promocao/carro.dart';
 
 class Gol implements Carro {
   @override
@@ -14,7 +15,7 @@ class Gol implements Carro {
   int velocidadeMaxima() {
     return 200;
   }
-  
+
   String tipoDeRodas() {
     return 'Esportivas';
   }
