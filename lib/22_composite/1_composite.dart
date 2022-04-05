@@ -3,6 +3,7 @@ void main() {
   final refrigerante = LeafProduto(nome: 'refrigerante', valor: 4);
   final agua = LeafProduto(nome: 'agua', valor: 5);
   var carrinho = CompositeCaixaImpl();
+  var carrinho2 = CompositeCaixaImpl();
   carrinho.caixas.addAll([cerveja, refrigerante, agua]);
 
   print(carrinho.somarValor());
@@ -14,8 +15,14 @@ void main() {
 
   compraEsquecida.caixas.addAll([tv, pc]);
   carrinho.caixas.add(compraEsquecida);
-
+  carrinho2.caixas = [
+    cerveja,
+    refrigerante,
+    agua,
+    ...compraEsquecida.caixas,
+  ];
   print(carrinho.somarValor());
+  print(carrinho2.somarValor());
 }
 
 abstract class ComponenteCaixa {
